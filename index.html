@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cooffe House: disfruta del mejor café, bebidas especiales y momentos únicos.">
+    <title>Cooffe House | Café & Experiencias</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">☕</span>
+                <span>COOFFE <strong>HOUSE</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#menu">Nuestro menú</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <a href="#menu" class="nav-button">Ver menú ↗</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO / HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <span class="eyebrow light">
+                    <span class="eyebrow-line"></span>
+                    UN CAFÉ, MIL MOMENTOS
+                </span>
+
+                <h1>El arte de disfrutar<br>un buen <em>café.</em></h1>
+
+                <p>
+                    Más que una taza de café, creamos experiencias.
+                    Descubre sabores únicos y disfruta cada momento
+                    en un espacio pensado para ti.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        Descubrir menú <span>↗</span>
+                    </a>
+                    <a href="#nosotros" class="btn btn-outline">
+                        Conócenos
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>100%</strong>
+                        <span>Pasión por el café</span>
+                    </div>
+                    <div>
+                        <strong>Fresh</strong>
+                        <span>Ingredientes frescos</span>
+                    </div>
+                    <div>
+                        <strong>Unique</strong>
+                        <span>Momentos especiales</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll">DESLIZA PARA DESCUBRIR ↓</div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about section-padding" id="nosotros">
+            <div class="container about-grid">
+
+                <div class="about-images">
+                    <img
+                        class="about-main-image"
+                        src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900"
+                        alt="Interior acogedor de una cafetería">
+
+                    <div class="about-label">
+                        <span>☕</span>
+                        <strong>Hecho con<br>pasión</strong>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        NUESTRA ESENCIA
+                    </span>
+
+                    <h2>Un lugar donde<br>el café se convierte<br>en <em>experiencia.</em></h2>
+
+                    <p>
+                        En Cooffe House creemos que los mejores momentos
+                        comienzan con una buena taza de café. Somos un
+                        espacio creado para compartir, disfrutar y
+                        conectar con los pequeños placeres de la vida.
+                    </p>
+
+                    <p>
+                        Seleccionamos cuidadosamente nuestros ingredientes
+                        y preparamos cada bebida con dedicación, calidad
+                        y mucho amor por el café.
+                    </p>
+
+                    <a href="#contacto" class="text-link">
+                        Conoce nuestro espacio <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            SABORES QUE ENAMORAN
+                        </span>
+                        <h2>Nuestro <em>menú.</em></h2>
+                    </div>
+                    <p>
+                        Descubre nuestra selección de bebidas y
+                        acompañamientos preparados especialmente para ti.
+                    </p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="cafe">Cafés</button>
+                    <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                    <button class="filter-btn" data-filter="postres">Postres</button>
+                </div>
+
+                <div class="products-grid">
+
+                    <article class="product-card" data-category="cafe">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700"
+                                 alt="Café latte">
+                            <span class="product-tag">Más vendido</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">CAFÉ ESPECIAL</span>
+                            <h3>Latte Clásico</h3>
+                            <p>Espresso intenso con leche cremosa y suave.</p>
+                            <div class="product-bottom">
+                                <strong>$9.000</strong>
+                                <button class="add-btn" data-name="Latte Clásico"
+                                        aria-label="Agregar Latte Clásico">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="cafe">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=700"
+                                 alt="Café cappuccino">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">CAFÉ ESPECIAL</span>
+                            <h3>Cappuccino</h3>
+                            <p>Equilibrio perfecto de espresso, leche y espuma.</p>
+                            <div class="product-bottom">
+                                <strong>$10.000</strong>
+                                <button class="add-btn" data-name="Cappuccino"
+                                        aria-label="Agregar Cappuccino">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bebidas">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700"
+                                 alt="Café frío">
+                            <span class="product-tag">Favorito</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">BEBIDA FRÍA</span>
+                            <h3>Iced Coffee</h3>
+                            <p>Café frío con hielo y un toque de leche.</p>
+                            <div class="product-bottom">
+                                <strong>$11.000</strong>
+                                <button class="add-btn" data-name="Iced Coffee"
+                                        aria-label="Agregar Iced Coffee">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="postres">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
+                                 alt="Pastel de chocolate">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">REPOSTERÍA</span>
+                            <h3>Pastel de chocolate</h3>
+                            <p>Delicioso pastel artesanal con chocolate.</p>
+                            <div class="product-bottom">
+                                <strong>$12.000</strong>
+                                <button class="add-btn" data-name="Pastel de chocolate"
+                                        aria-label="Agregar Pastel de chocolate">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="postres">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700"
+                                 alt="Postre de frutos rojos">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">REPOSTERÍA</span>
+                            <h3>Cheesecake</h3>
+                            <p>Suave tarta de queso con frutos rojos.</p>
+                            <div class="product-bottom">
+                                <strong>$13.000</strong>
+                                <button class="add-btn" data-name="Cheesecake"
+                                        aria-label="Agregar Cheesecake">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bebidas">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=700"
+                                 alt="Bebida refrescante">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">BEBIDA NATURAL</span>
+                            <h3>Limonada natural</h3>
+                            <p>Refrescante bebida preparada al momento.</p>
+                            <div class="product-bottom">
+                                <strong>$8.000</strong>
+                                <button class="add-btn" data-name="Limonada natural"
+                                        aria-label="Agregar Limonada natural">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="cart-message" id="cartMessage" role="status" aria-live="polite">
+                    <span id="cartText">Producto agregado</span>
+                    <span>Pedidos: <strong id="cartCount">0</strong></span>
+                </div>
+
+                <p class="menu-note">
+                    * Precios de ejemplo en pesos colombianos (COP).
+                </p>
+            </div>
+        </section>
+
+        <!-- ESPECIALIDADES -->
+        <section class="special-section" id="especialidades">
+            <div class="special-image"></div>
+            <div class="special-content">
+                <span class="eyebrow light">
+                    <span class="eyebrow-line"></span>
+                    NUESTRA RECOMENDACIÓN
+                </span>
+
+                <h2>El secreto está<br>en cada <em>detalle.</em></h2>
+
+                <p>
+                    Cada grano tiene una historia y cada preparación
+                    es una oportunidad para crear algo extraordinario.
+                    Ven y encuentra tu nuevo café favorito.
+                </p>
+
+                <a href="#menu" class="btn btn-primary">
+                    Explorar productos ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- OPINIONES -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="center-heading">
+                    <span class="eyebrow">
+                        <span class="eyebrow-line"></span>
+                        EXPERIENCIAS COOFFE HOUSE
+                        <span class="eyebrow-line"></span>
+                    </span>
+                    <h2>Lo que dicen <em>nuestros clientes.</em></h2>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "Un lugar increíble, el café es delicioso
+                            y el ambiente es perfecto para compartir."
+                        </p>
+                        <strong>María G.</strong>
+                        <span>Cliente</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "Me encantó la presentación de las bebidas.
+                            Es un espacio muy acogedor y especial."
+                        </p>
+                        <strong>Andrés R.</strong>
+                        <span>Cliente</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                            "Los postres son excelentes y la atención
+                            hace que quieras regresar."
+                        </p>
+                        <strong>Laura M.</strong>
+                        <span>Cliente</span>
+                    </article>
+                </div>
+                <p class="menu-note">* Opiniones de ejemplo para la demostración.</p>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact-section section-padding" id="contacto">
+            <div class="container contact-grid">
+                <div>
+                    <span class="eyebrow light">
+                        <span class="eyebrow-line"></span>
+                        ESTAMOS PARA TI
+                    </span>
+                    <h2>Tu próximo momento<br>favorito empieza <em>aquí.</em></h2>
+                    <p>
+                        Ven a visitarnos, comparte con nosotros y
+                        disfruta el verdadero placer de un buen café.
+                    </p>
+                    <a href="mailto:cooffehouse@email.com" class="btn btn-primary">
+                        Escríbenos ↗
+                    </a>
+                </div>
+
+                <div class="contact-details">
+                    <div>
+                        <span>📍</span>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Agrega aquí la dirección de tu cafetería.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span>🕒</span>
+                        <div>
+                            <strong>Horarios</strong>
+                            <p>Lunes a sábado: 8:00 AM – 8:00 PM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span>✉️</span>
+                        <div>
+                            <strong>Correo electrónico</strong>
+                            <p>cooffehouse@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#inicio" class="logo footer-logo">
+                <span class="logo-icon">☕</span>
+                <span>COOFFE <strong>HOUSE</strong></span>
+            </a>
+
+            <p>© <span id="currentYear"></span> Cooffe House. Todos los derechos reservados.</p>
+
+            <a href="#inicio" class="back-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
